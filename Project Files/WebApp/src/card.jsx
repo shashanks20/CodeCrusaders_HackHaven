@@ -1,21 +1,7 @@
 import React from 'react';
 
-// function Card({ data }) {
-function Card() {
-  // const { text, location, severity, time, commenting, staring, groping } = data;
-
-  // const getShadowClass = (severity) => {
-  //   switch (severity) {
-  //     case 'High':
-  //       return 'shadow-inner-red';
-  //     case 'Medium':
-  //       return 'shadow-inner-yellow';
-  //     case 'Low':
-  //       return 'shadow-inner-blue';
-  //     default:
-  //       return '';
-  //   }
-  // };
+function Card({ data }) {
+  const { trans_date_trans_time, merchant, category, first, last, trans_num } = data;
 
   return (
     <div className='card'>
@@ -23,29 +9,14 @@ function Card() {
         <h2>Transaction Details</h2>
       </div>
       <div className="card-body">
-        {/* <p>{text}</p> */}
         <ul>
-          <li>Transaction ID: {}</li>
-          <li>Transaction Date and Time: {}</li>
-          <li>Credit Card Number: {}</li>
-          <li>Sender Name: {}</li>
-          <li>Recipient Name: {}</li>
-          <li>Probability: {}</li>
+          <li>Transaction ID: {trans_num}</li>
+          <li>Transaction Date and Time: {trans_date_trans_time}</li>
+          <li>Sender Name: {first + " " + last}</li>
+          <li>Recipient Name: {merchant}</li>
+          <li>Category: {category}</li>
         </ul>
-        <p>
-          {/* <a href="https://www.rainn.org/" target="_blank" rel="noopener noreferrer">
-            Learn More About Sexual Harassment Helpline
-          </a> */}
-        </p>
-
-        <div className="feedback">
-        <button className="true">V</button>
-        <button className="falsePositive">X</button>
-        </div>
-
-
       </div>
-      
     </div>
   );
 }
