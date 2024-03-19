@@ -6,11 +6,11 @@ const Footer = () => {
       <div className="footer-content">
         <div className="footer-section about">
           <h2>About Us</h2>
-          <p>DeFraud is dedicated to detecting transaction and online related fruadulent activites.</p>
+          <p>FraudShield is dedicated to detecting transaction and online related fruadulent activites.</p>
         </div>
         <div className="footer-section contact">
           <h2>Contact Us</h2>
-          <p>Email: info@defraud.com</p>
+          <p>Email: info@fraudshield.com</p>
           <p>Phone: 123-456-7890</p>
         </div>
         <div className="footer-section links">
@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; 2024 DeFraud. All rights reserved.</p>
+        <p>&copy; 2024 FraudShield. All rights reserved.</p>
       </div>
     </footer>
   );
